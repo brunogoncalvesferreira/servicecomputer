@@ -1,0 +1,261 @@
+/* ============= root ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html a {
+  text-decoration: none;
+}
+
+html li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ============= color ============== */
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+/* ============= layout ============== */
+.container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* ============= header ============== */
+#header {
+  width: 100%;
+  background: var(--purple-bg);
+  padding: 2rem;
+  box-shadow: 0px 2px 2px var(--green);
+}
+
+nav.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+div.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+div.logo-text span {
+  color: #4fff4b;
+}
+div.logo-text p {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-family: 'open sans';
+  font-weight: 500;
+}
+nav .logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+nav .list-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .link a {
+  font-size: 0.9rem;
+  font-family: 'open sans';
+  font-weight: 500;
+  color: var(--white);
+  transition: 0.2s;
+}
+nav .link a:hover {
+  opacity: 0.5;
+}
+
+/* ============= main - seção home ============== */
+
+main#main {
+  width: 100%;
+}
+
+section#home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+section#home h1 {
+  font-family: 'open sans';
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+section#home p {
+  text-align: justify;
+  text-indent: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-family: 'open sans';
+}
+section#home .title-border-top {
+  border-top: 1px solid var(--dark-bg);
+  padding-top: 1.5rem;
+}
+section#home img {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+
+/* ============= main - seção service ============== */
+section#service h1 {
+  font-family: 'open sans';
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+section#service .title-service {
+  font-size: 1.2rem;
+}
+
+section#service p {
+  text-align: justify;
+  text-indent: 1rem;
+  line-height: 1.5;
+  font-family: 'open sans';
+}
+
+/* ============= main - seção price ============== */
+section#price {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--purple-bg);
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 2px 2px var(--dark-bg);
+  padding: 1rem;
+  color: var(--white);
+  font-family: 'open sans';
+}
+section#price div.price-formatting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+section#price ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+section#price ul li.list-price {
+  list-style: inside;
+}
+
+/* ============= main - seção contact ============== */
+section#contact {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+section#contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+  background-color: var(--green);
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 10pt;
+  font-family: 'roboto';
+  color: var(--white);
+  font-weight: bold;
+  transition: 0.4s;
+}
+section#contact address,
+h1 {
+  font-family: 'roboto';
+}
+section#contact a:hover {
+  background-color: #3ebb3c;
+}
+section#contact a img {
+  width: 2rem;
+}
+
+div.link-social {
+  margin-top: 2rem;
+}
+section#contact .instagram {
+  background-color: #8a3ab9;
+  width: 8rem;
+  transition: 0.4s;
+}
+section#contact .instagram:hover {
+  background-color: #6d2c92;
+}
+section#contact .facebook {
+  background-color: #3b5998;
+  width: 8rem;
+  transition: 0.4s;
+}
+section#contact .facebook:hover {
+  background-color: #213766;
+}
+
+/* ============= footer - rodapé ============== */
+footer#footer {
+  background-color: var(--purple-bg);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer#footer p {
+  font-size: 9pt;
+  font-family: 'roboto';
+  color: var(--white);
+}
+footer#footer a {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+/* ========== responsividade ============ */
+@media (max-width: 376px) {
+  nav.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  section#home img {
+    width: 8rem;
+  }
+}
